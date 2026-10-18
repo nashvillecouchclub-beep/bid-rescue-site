@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Estimate Checkup</title>
+<meta name="description" content="Send your unsold pool estimates in any shape. Get a free checkup report within one business day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:opsz,wght@9..144,800&family=Outfit:wght@400;600;700;800&display=swap">
+<link rel="icon" href="logo-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html"><img src="logo-icon.svg" alt="" width="36" height="36"><span class="wm">Bid Rescue<small>WE BRING BIDS BACK</small></span></a>
+    <a class="header-cta" href="index.html#pricing">Pricing</a>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap narrow">
+    <p class="kicker">Free checkup</p>
+    <h1>Send us your unsold estimates</h1>
+    <p class="lead">Any shape is fine. A PDF, a CSV, a spreadsheet, a CRM export, or a phone photo of your estimate binder.</p>
+    <div class="note">Our team tidies up whatever you send. You get a short report within one business day: how many unsold bids you have, the dollars in them, and a careful estimate of what we might bring back.</div>
+
+    <div class="form-card">
+      <!--
+        FORMSUBMIT FILE UPLOADS (checked Oct 2026):
+        FormSubmit emails uploaded files as attachments when the form uses
+        method POST and enctype multipart/form-data. This is on the free service.
+        Limit: about 10 MB total for all files in one submission. Files are
+        emailed, not stored by FormSubmit. This figure comes from third party
+        write ups; formsubmit.co itself could not be reached from our build
+        environment, so test one real upload before launch.
+        A stack of phone photos can easily pass 10 MB, so there is a fallback:
+        the "share a link instead" field for Google Drive or Dropbox.
+        forms.js blocks a send with no file and no link, and warns if files
+        add up to more than 10 MB.
+      -->
+      <form id="checkup-form" action="https://formsubmit.co/rickey@answeredreviewsco.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="Bid Rescue: new free checkup upload">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thanks.html?from=checkup" class="js-next">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div>
+          <label for="k-files">Your estimates</label>
+          <!-- No capture attribute on purpose: phones still offer "Take Photo" in the picker, and capture would hide the file option. -->
+          <input id="k-files" type="file" name="attachment" multiple accept=".pdf,.csv,.xls,.xlsx,.numbers,image/*">
+          <p class="help">On a phone you can take photos right here. Up to about 10 MB in total.</p>
+        </div>
+        <div>
+          <label for="k-link">Or share a link instead <span class="opt">(Google Drive or Dropbox)</span></label>
+          <input id="k-link" type="url" name="share_link" placeholder="https://">
+          <p class="help">Good for big files or lots of photos. Set the link so anyone with it can view.</p>
+        </div>
+        <p id="checkup-error" class="note" tabindex="-1" hidden>Please add a file or a link so we have something to check.</p>
+
+        <div><label for="k-name">Your name</label><input id="k-name" type="text" name="name" required autocomplete="name"></div>
+        <div><label for="k-company">Company</label><input id="k-company" type="text" name="company" required autocomplete="organization"></div>
+        <div><label for="k-email">Email</label><input id="k-email" type="email" name="email" required autocomplete="email"></div>
+        <div><label for="k-metro">Metro you build in</label><input id="k-metro" type="text" name="metro" required placeholder="Example: Atlanta"></div>
+        <div><label for="k-crm">CRM you use <span class="opt">(optional)</span></label><input id="k-crm" type="text" name="crm" placeholder="Or just say: a binder"></div>
+
+        <label class="check"><input type="checkbox" name="consent" value="yes" required> These are my company's estimates and I can share them for this checkup.</label>
+
+        <button class="btn btn-big" type="submit">Send for my free checkup</button>
+        <p class="fine">We use your estimates only to make your report. We do not email your homeowners unless you sign up.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="index.html">Home</a><a href="signup.html">Sign up</a><a href="terms.html">Terms</a><a href="mailto:hello@getbidrescue.com">hello@getbidrescue.com</a></nav>
+    <p>Bid Rescue</p>
+  </div>
+</footer>
+<script src="forms.js" defer></script>
+</body>
+</html>

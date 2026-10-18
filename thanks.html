@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank You</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:opsz,wght@9..144,800&family=Outfit:wght@400;600;700;800&display=swap">
+<link rel="icon" href="logo-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html"><img src="logo-icon.svg" alt="" width="36" height="36"><span class="wm">Bid Rescue<small>WE BRING BIDS BACK</small></span></a>
+  </div>
+</header>
+<main>
+<section>
+  <div class="wrap narrow center">
+    <p class="kicker">Got it</p>
+    <h1 id="t-title">Thank you</h1>
+    <p class="lead" id="t-body">We got your note and will email you back soon.</p>
+    <p id="t-next"></p>
+    <a class="btn mt" href="index.html">Back to home</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="index.html">Home</a><a href="checkup.html">Free checkup</a><a href="terms.html">Terms</a><a href="mailto:hello@getbidrescue.com">hello@getbidrescue.com</a></nav>
+    <p>Bid Rescue</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var msgs = {
+    checkup: ['Your estimates are in', 'Our team will tidy them up and email your free checkup report within one business day.', 'Missed something? Just reply to our email with more files or a link.'],
+    contact: ['Thanks for reaching out', 'We will email you back soon, usually within one business day.', ''],
+    signup: ['Welcome aboard', 'We will check that your metro is open and email you the next steps, including setting up a card on file.', 'You are only charged when a job signs.']
+  };
+  var from = new URLSearchParams(window.location.search).get('from');
+  var m = msgs[from];
+  if (!m) return;
+  document.getElementById('t-title').textContent = m[0];
+  document.getElementById('t-body').textContent = m[1];
+  document.getElementById('t-next').textContent = m[2];
+})();
+</script>
+</body>
+</html>

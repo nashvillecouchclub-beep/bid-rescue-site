@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Builder Sign Up</title>
+<meta name="description" content="Sign up with Bid Rescue. Nothing upfront, no contract, one builder per metro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:opsz,wght@9..144,800&family=Outfit:wght@400;600;700;800&display=swap">
+<link rel="icon" href="logo-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html"><img src="logo-icon.svg" alt="" width="36" height="36"><span class="wm">Bid Rescue<small>WE BRING BIDS BACK</small></span></a>
+    <a class="header-cta" href="terms.html">Terms</a>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap narrow">
+    <p class="kicker">Sign up</p>
+    <h1>Let's set up your revival</h1>
+    <p class="lead">This takes about 5 minutes. We use it to build your emails and your homeowner proposal pages in your own name and colors.</p>
+
+    <div class="form-card">
+      <!-- Logo upload rides as a FormSubmit attachment (about 10 MB total per submission). -->
+      <form action="https://formsubmit.co/rickey@answeredreviewsco.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="Bid Rescue: new builder sign up">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thanks.html?from=signup" class="js-next">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <fieldset>
+          <legend>Your company</legend>
+          <div class="grid">
+            <div><label for="s-company">Company name</label><input id="s-company" type="text" name="company" required autocomplete="organization"></div>
+            <div><label for="s-metro">Metro you build in</label><input id="s-metro" type="text" name="metro" required placeholder="Example: Atlanta"><p class="help">One builder per metro. We will confirm your metro is open.</p></div>
+            <div><label for="s-site">Website</label><input id="s-site" type="url" name="website" placeholder="https://"></div>
+            <div><label for="s-address">Business mailing address</label><input id="s-address" type="text" name="business_address" required autocomplete="street-address"><p class="help">The law says every email must show it.</p></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>How your emails look</legend>
+          <div class="grid">
+            <div><label for="s-sender">Sending name</label><input id="s-sender" type="text" name="sending_name" required placeholder="Example: Mike at Blue Ridge Pools"><p class="help">The name homeowners see in their inbox.</p></div>
+            <div><label for="s-reply">Reply to email</label><input id="s-reply" type="email" name="reply_to_email" required><p class="help">Homeowner replies go straight to you.</p></div>
+            <div><label for="s-logo">Logo <span class="opt">(optional)</span></label><input id="s-logo" type="file" name="attachment" accept="image/*,.pdf,.svg"></div>
+            <div><label for="s-color">Brand color</label><input id="s-color" type="color" name="brand_color" value="#2F6F4F"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your links for homeowners</legend>
+          <div class="grid">
+            <div><label for="s-deposit">Deposit or payment link</label><input id="s-deposit" type="url" name="deposit_url" required placeholder="https://"><p class="help">Your own link. The Accept button sends homeowners here. Money goes to you, not us.</p></div>
+            <div><label for="s-fin">Financing link <span class="opt">(optional)</span></label><input id="s-fin" type="url" name="financing_url" placeholder="https://"></div>
+            <div><label for="s-rev">Review link <span class="opt">(optional)</span></label><input id="s-rev" type="url" name="review_url" placeholder="https://"><p class="help">Your Google reviews page or similar.</p></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your off season deal</legend>
+          <p class="help" style="margin-top:0">Pick one line or write your own. You approve it once, and it goes in every email and proposal page. Only offer what you will honor.</p>
+          <div class="radio-list mt">
+            <label class="check"><input type="radio" name="off_season_hook" value="Your 2026 price is held if you sign by Dec 31; spring prices go up." required> Your 2026 price is held if you sign by Dec 31; spring prices go up.</label>
+            <label class="check"><input type="radio" name="off_season_hook" value="First 10 to sign get a May build slot."> First 10 to sign get a May build slot.</label>
+            <label class="check"><input type="radio" name="off_season_hook" value="custom"> I will write my own</label>
+          </div>
+          <div class="mt"><label for="s-hook">Your own line <span class="opt">(if you picked write my own)</span></label><input id="s-hook" type="text" name="off_season_hook_custom" maxlength="140"></div>
+          <label class="check mt"><input type="checkbox" name="hook_approved" value="yes" required> I approve this line for my emails and proposal pages.</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your contact</legend>
+          <div class="grid">
+            <div><label for="s-name">Your name</label><input id="s-name" type="text" name="name" required autocomplete="name"></div>
+            <div><label for="s-email">Your email</label><input id="s-email" type="email" name="email" required autocomplete="email"></div>
+          </div>
+        </fieldset>
+
+        <label class="check"><input type="checkbox" name="agree_terms" value="yes" required> I have read and agree to the <a href="terms.html" target="_blank" rel="noopener">terms</a>.</label>
+        <p class="fine">Nothing upfront. No contract. We will email you to set up a card on file. You are only charged when a job signs.</p>
+        <button class="btn btn-big" type="submit">Sign me up</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="index.html">Home</a><a href="checkup.html">Free checkup</a><a href="terms.html">Terms</a><a href="mailto:hello@getbidrescue.com">hello@getbidrescue.com</a></nav>
+    <p>Bid Rescue</p>
+  </div>
+</footer>
+<script src="forms.js" defer></script>
+</body>
+</html>
