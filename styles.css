@@ -230,3 +230,11 @@ select { width: 100%; font: inherit; font-size: 18px; padding: 12px 14px; min-he
 .fine, .help, .source-note { font-size: 18px; }
 .price-card .per, .t-card p, .t-card ul li { font-size: 18px; }
 .price-card > .kicker:first-child { font-size: 18px; letter-spacing: .04em; }
+
+/* Why do you need us? (Rickey Oct 20 6:26 pm): plain reasons right under the hero */
+.why-us { background: var(--white); }
+.why-us h2 { margin-bottom: .3em; }
+.why-us .lead { font-size: 1.2rem; }
+.reasons { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 12px; }
+.reasons li { background: var(--sand); border-left: 6px solid var(--coral); border-radius: 10px; padding: 16px 18px; font-size: 18px; line-height: 1.5; color: var(--muted); }
+.reasons li strong { display: block; color: var(--navy); font-size: 1.15rem; line-height: 1.3; margin-bottom: 4px; }

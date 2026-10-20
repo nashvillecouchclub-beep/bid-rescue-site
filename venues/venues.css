@@ -273,3 +273,11 @@ h3 { font-size: 1.6rem; }
 summary { font-size: 1.45rem; }
 legend { font-size: 1.55rem; }
 input, select, textarea { font-size: 1.2rem; }
+
+/* Why do you need us? (Rickey Oct 20 6:26 pm): numbered reasons in the stationery style */
+.why-us .intro { color: var(--muted); max-width: var(--measure); margin-left: auto; margin-right: auto; }
+.reasons { list-style: none; padding: 0; margin: 0; counter-reset: reason; }
+.reasons li { counter-increment: reason; position: relative; padding: 1.15rem 0 1.15rem 2.6rem; border-bottom: 1px solid var(--gilt-soft); color: var(--muted); }
+.reasons li:first-child { border-top: 1px solid var(--gilt-soft); }
+.reasons li::before { content: counter(reason); position: absolute; left: 0.1rem; top: 1rem; font-family: var(--display); font-style: italic; font-size: 1.7rem; line-height: 1; color: var(--gilt); }
+.reasons li strong { display: block; font-family: var(--display); font-weight: 500; font-size: 1.5rem; line-height: 1.25; color: var(--evergreen); margin-bottom: 0.35rem; }
