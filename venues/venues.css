@@ -281,3 +281,7 @@ input, select, textarea { font-size: 1.2rem; }
 .reasons li:first-child { border-top: 1px solid var(--gilt-soft); }
 .reasons li::before { content: counter(reason); position: absolute; left: 0.1rem; top: 1rem; font-family: var(--display); font-style: italic; font-size: 1.7rem; line-height: 1; color: var(--gilt); }
 .reasons li strong { display: block; font-family: var(--display); font-weight: 500; font-size: 1.5rem; line-height: 1.25; color: var(--evergreen); margin-bottom: 0.35rem; }
+
+.included { list-style: none; padding: 0; margin: 0.4rem 0 1rem; }
+.included li { position: relative; padding: 0.45rem 0 0.45rem 1.5rem; border-top: 1px solid var(--gilt-soft); font-size: 1.15rem; }
+.included li::before { content: ""; position: absolute; left: 0.2rem; top: 1.05rem; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--gilt); }
