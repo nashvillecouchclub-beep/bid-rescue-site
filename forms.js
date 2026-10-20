@@ -41,9 +41,18 @@
   }
 })();
 
+// Old links such as checkup.html?trade=wedding-venues now go to the venue site.
+(function () {
+  var p = window.location.pathname;
+  if (p.indexOf('/venues/') >= 0) return;
+  if (new URLSearchParams(window.location.search).get('trade') !== 'wedding-venues') return;
+  var page = /signup/.test(p) ? 'signup.html' : (/checkup/.test(p) ? 'checkup.html' : '');
+  window.location.replace(new URL('/venues/' + page, window.location.href).href);
+})();
+
 // State rules (Hub settings/stateLawMap, checked Oct 20 2026; copy in state-rules.json).
 // Contractor lanes: red states are not served; yellow states get flat monthly plans only.
-// Wedding venues are served in every state.
+// Wedding venues live in /venues/ (own site, served in every state); contractor pages never mention them.
 (function () {
   var RED = ['CA', 'CT', 'DC', 'HI', 'MD', 'MI', 'NJ'];
   var YELLOW = ['MA', 'NC', 'NV', 'NY', 'OR', 'VA', 'WI'];
@@ -59,7 +68,7 @@
     function check() {
       var s = st.value, text = '', block = false;
       if (s && !venue()) {
-        if (RED.indexOf(s) >= 0) { text = 'Sorry, we are not taking clients in your trade in this state yet. Wedding venues are welcome in every state.'; block = true; }
+        if (RED.indexOf(s) >= 0) { text = 'Sorry, we are not taking clients in your trade in this state yet.'; block = true; }
         else if (YELLOW.indexOf(s) >= 0) { text = 'In this state we offer the flat monthly plans only, with no per job fee.'; if (pl && pl.value === 'per-job') block = true; }
         if (s === 'NV' && tr && tr.value === 'pools') { text = 'Sorry, we are not taking pool or spa builders in Nevada yet.'; block = true; }
         if (s === 'NY') text += ' We do not take clients in Nassau, Suffolk, Westchester, Rockland or Putnam counties.';
@@ -75,13 +84,13 @@
     form.addEventListener('submit', function (ev) { if (!check()) { ev.preventDefault(); if (msg) msg.focus && msg.focus(); } });
     // Prefill the trade from ?trade= on links from trade pages.
     var q = new URLSearchParams(window.location.search).get('trade');
-    if (q && tr) { for (var j = 0; j < tr.options.length; j++) if (tr.options[j].value === q) tr.selectedIndex = j; }
+    if (q && tr && tr.options) { for (var j = 0; j < tr.options.length; j++) if (tr.options[j].value === q) tr.selectedIndex = j; }
     // Show only the plans for this business (each trade and size sees its own plans).
     if (pl) {
       var qp = new URLSearchParams(window.location.search).get('plan');
       var allow = ['exclusive', 'per-job', 'win-back'];
       if (qp === 'small-shop') allow = ['small-shop', 'win-back'];
-      else if (q === 'wedding-venues') allow = ['exclusive', 'wedding-per-booking'];
+      else if (venue()) allow = ['exclusive', 'wedding-per-booking'];
       else if (q === 'fire-inspection') allow = ['deficiency'];
       for (var k = pl.options.length - 1; k >= 1; k--) if (allow.indexOf(pl.options[k].value) < 0) pl.remove(k);
       if (pl.options.length === 2) pl.selectedIndex = 1;

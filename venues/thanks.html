@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank You | Bid Rescue for Venues</title>
+<meta name="description" content="Thank you from Bid Rescue for Venues.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Jost:wght@300..600&display=swap">
+<link rel="icon" href="monogram.svg" type="image/svg+xml">
+<link rel="stylesheet" href="venues.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="column wide bar">
+    <a class="wordmark" href="index.html"><img src="monogram.svg" alt="" width="42" height="42"><span class="name"><b>Bid Rescue</b><i>for Venues</i></span></a>
+    <nav><a href="index.html">Home</a></nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="invitation-wrap">
+  <div class="invitation">
+    <img class="seal" src="monogram.svg" alt="" width="64" height="64">
+    <p class="greeting">Received with thanks</p>
+    <h1 id="t-title">Thank you</h1>
+    <p class="lead" id="t-body">We got your note and will email you back soon.</p>
+    <p class="small" id="t-next"></p>
+    <a class="button" href="index.html">Back to the venue page</a>
+  </div>
+</section>
+</main>
+
+<footer class="colophon">
+  <div class="column">
+    <img src="monogram.svg" alt="" width="52" height="52">
+    <p class="sign">Bid Rescue for Venues. We bring couples back.</p>
+    <nav><a href="index.html">Home</a><a href="checkup.html">Free inquiry check</a><a href="signup.html">Sign up</a><a href="terms.html">Client terms</a><a href="mailto:hello@getbidrescue.com">hello@getbidrescue.com</a></nav>
+    <p>P.O. Box 1166, Smyrna, TN 37167</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var msgs = {
+    checkup: ['Your inquiries are in', 'Within 48 hours we email you which couples we would bring back, with ready follow ups in your style.', 'Missed something? Just reply to our email with more files or a link.'],
+    signup: ['Welcome', 'We check that your area is open and email you the next steps, including the link to save your card on Square.', 'Nothing is charged until your first paid month or stage is delivered.']
+  };
+  var m = msgs[new URLSearchParams(window.location.search).get('from')];
+  if (!m) return;
+  document.getElementById('t-title').textContent = m[0];
+  document.getElementById('t-body').textContent = m[1];
+  document.getElementById('t-next').textContent = m[2];
+})();
+</script>
+</body>
+</html>
