@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Free Estimate Checkup</title>
-<meta name="description" content="Send your unsold pool estimates in any shape. Get a free checkup report within one business day.">
+<title>Free Estimate Check | Bid Rescue</title>
+<meta name="description" content="Send 5 estimates that never signed. Get a ready follow up for each within 48 hours, free.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:opsz,wght@9..144,800&family=Outfit:wght@400;600;700;800&display=swap">
@@ -12,45 +12,31 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
     <a class="wordmark" href="index.html"><img src="logo-icon.svg" alt="" width="36" height="36"><span class="wm">Bid Rescue<small>WE BRING BIDS BACK</small></span></a>
-    <a class="header-cta" href="index.html#pricing">Pricing</a>
+    <nav class="top-nav"><a href="index.html#trades">Trades</a><a href="everything.html">Everything we do</a><a class="header-cta" href="index.html#pricing">Pricing</a></nav>
   </div>
 </header>
 
-<main>
+<main id="main">
 <section>
   <div class="wrap narrow">
-    <p class="kicker">Free checkup</p>
-    <h1>Send us your unsold estimates</h1>
-    <p class="lead">Any shape is fine. A PDF, a CSV, a spreadsheet, a CRM export, or a phone photo of your estimate binder.</p>
-    <div class="note">Our team tidies up whatever you send. You get a short report within one business day: how many unsold bids you have, the dollars in them, and a careful estimate of what we might bring back.</div>
+    <p class="kicker">Free check</p>
+    <h1>Send us 5 estimates that never signed</h1>
+    <p class="lead">Within 48 hours you get a ready follow up email for each one, in your voice, free to send yourself. No strings.</p>
+    <div class="note">Any shape is fine: a PDF, a spreadsheet, a CRM export, or a phone photo of the binder. Send your whole list if you like, and we add a short report: how many unsold estimates you have and the dollars in them. Wedding venues: send your last 90 days of inquiries.</div>
 
     <div class="form-card">
-      <!--
-        FORMSUBMIT FILE UPLOADS (checked Oct 2026):
-        FormSubmit emails uploaded files as attachments when the form uses
-        method POST and enctype multipart/form-data. This is on the free service.
-        Limit: about 10 MB total for all files in one submission. Files are
-        emailed, not stored by FormSubmit. This figure comes from third party
-        write ups; formsubmit.co itself could not be reached from our build
-        environment, so test one real upload before launch.
-        A stack of phone photos can easily pass 10 MB, so there is a fallback:
-        the "share a link instead" field for Google Drive or Dropbox.
-        forms.js blocks a send with no file and no link, and warns if files
-        add up to more than 10 MB.
-      -->
       <form id="checkup-form" action="https://formsubmit.co/41c4b4d0cf242d0dddc66ea78b05eee6" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="_subject" value="Bid Rescue: new free checkup upload">
+        <input type="hidden" name="_subject" value="Bid Rescue: new free check upload">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://getbidrescue.com/thanks.html?from=checkup" class="js-next">
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
         <div>
           <label for="k-files">Your estimates</label>
-          <!-- No capture attribute on purpose: phones still offer "Take Photo" in the picker, and capture would hide the file option. -->
           <input id="k-files" type="file" name="attachment" multiple accept=".pdf,.csv,.xls,.xlsx,.numbers,image/*">
           <p class="help">On a phone you can take photos right here. Up to about 10 MB in total.</p>
         </div>
@@ -60,27 +46,102 @@
           <p class="help">Good for big files or lots of photos. Set the link so anyone with it can view.</p>
         </div>
         <p id="checkup-error" class="note" tabindex="-1" hidden>Please add a file or a link so we have something to check.</p>
-
         <div><label for="k-name">Your name</label><input id="k-name" type="text" name="name" required autocomplete="name"></div>
         <div><label for="k-company">Company</label><input id="k-company" type="text" name="company" required autocomplete="organization"></div>
         <div><label for="k-email">Email</label><input id="k-email" type="email" name="email" required autocomplete="email"></div>
-        <div><label for="k-metro">Metro you build in</label><input id="k-metro" type="text" name="metro" required placeholder="Example: Atlanta"></div>
-        <div><label for="k-crm">CRM you use <span class="opt">(optional)</span></label><input id="k-crm" type="text" name="crm" placeholder="Or just say: a binder"></div>
-
-        <label class="check"><input type="checkbox" name="consent" value="yes" required> These are my company's estimates and I can share them for this checkup.</label>
-
-        <button class="btn btn-big" type="submit">Send for my free checkup</button>
-        <p class="fine">We use your estimates only to make your report. We do not email your homeowners unless you sign up.</p>
+        <div><label for="k-trade">Your trade</label><select id="k-trade" name="trade" required class="js-trade">
+              <option value="">Choose your trade</option>
+              <option value="pools">Pool builders</option>
+              <option value="custom-homes">Custom home builders</option>
+              <option value="luxury-remodels">Luxury remodelers</option>
+              <option value="barndominiums">Barndominium builders</option>
+              <option value="home-theater">Home theater and smart home</option>
+              <option value="roofing">Roofers</option>
+              <option value="kitchens-baths">Kitchen and bath remodelers</option>
+              <option value="cabinets">Cabinet shops</option>
+              <option value="hvac">HVAC companies</option>
+              <option value="windows-doors">Window and door companies</option>
+              <option value="foundation">Foundation repair companies</option>
+              <option value="home-elevators">Home elevator and stairlift companies</option>
+              <option value="fence">Fence companies</option>
+              <option value="deck">Deck builders</option>
+              <option value="landscaping">Landscaping companies</option>
+              <option value="tree">Tree service companies</option>
+              <option value="plumbing">Plumbing companies</option>
+              <option value="electrical">Electrical contractors</option>
+              <option value="commercial-cleaning">Commercial cleaning companies</option>
+              <option value="wedding-venues">Wedding venue</option>
+              <option value="fire-inspection">Fire inspection company</option>
+              <option value="other">Other</option>
+            </select></div>
+        <div><label for="k-state">State you work in</label><select id="k-state" name="state" required class="js-state">
+              <option value="">Choose your state</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select><p class="note js-state-msg" hidden></p></div>
+        <div><label for="k-metro">City or metro</label><input id="k-metro" type="text" name="metro" required placeholder="Example: Nashville"></div>
+        <label class="check"><input type="checkbox" name="consent" value="yes" required> These are my company's estimates and I can share them for this check.</label>
+        <button class="btn btn-big" type="submit">Send for my free follow ups</button>
+        <p class="fine">We use your estimates only for this check. We never email your customers unless you sign up and approve the emails.</p>
       </form>
     </div>
   </div>
 </section>
 </main>
-
 <footer class="site-footer">
   <div class="wrap">
-    <nav><a href="index.html">Home</a><a href="signup.html">Sign up</a><a href="terms.html">Terms</a><a href="mailto:hello@getbidrescue.com">hello@getbidrescue.com</a></nav>
-    <p>Bid Rescue</p>
+    <nav><a href="index.html">Home</a><a href="index.html#trades">Trades</a><a href="checkup.html">Free check</a><a href="signup.html">Sign up</a><a href="everything.html">Everything we do</a><a href="terms.html">Client terms</a><a href="mailto:hello@getbidrescue.com">hello@getbidrescue.com</a></nav>
+    <p>Bid Rescue. We bring bids back.</p>
+    <p>P.O. Box 1166, Smyrna, TN 37167</p>
   </div>
 </footer>
 <script src="forms.js" defer></script>

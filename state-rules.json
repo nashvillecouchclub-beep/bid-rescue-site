@@ -1,0 +1,23 @@
+{
+ "checked": "2026-10-20",
+ "source": "Hub settings/stateLawMap",
+ "contractorRed": [
+  "CA",
+  "CT",
+  "DC",
+  "HI",
+  "MD",
+  "MI",
+  "NJ"
+ ],
+ "contractorYellowFlatMonthlyOnly": [
+  "MA",
+  "NC",
+  "NV",
+  "NY",
+  "OR",
+  "VA",
+  "WI"
+ ],
+ "weddingVenues": "all states"
+}

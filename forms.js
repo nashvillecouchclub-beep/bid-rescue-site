@@ -40,3 +40,41 @@
     });
   }
 })();
+
+// State rules (Hub settings/stateLawMap, checked Oct 20 2026; copy in state-rules.json).
+// Contractor lanes: red states are not served; yellow states get flat monthly plans only.
+// Wedding venues are served in every state.
+(function () {
+  var RED = ['CA', 'CT', 'DC', 'HI', 'MD', 'MI', 'NJ'];
+  var YELLOW = ['MA', 'NC', 'NV', 'NY', 'OR', 'VA', 'WI'];
+  var forms = document.querySelectorAll('form');
+  for (var i = 0; i < forms.length; i++) (function (form) {
+    var st = form.querySelector('.js-state');
+    if (!st) return;
+    var tr = form.querySelector('.js-trade');
+    var pl = form.querySelector('.js-plan');
+    var msg = form.querySelector('.js-state-msg');
+    var pmsg = form.querySelector('.js-plan-msg');
+    function venue() { return tr && tr.value === 'wedding-venues'; }
+    function check() {
+      var s = st.value, text = '', block = false;
+      if (s && !venue()) {
+        if (RED.indexOf(s) >= 0) { text = 'Sorry, we are not taking clients in your trade in this state yet. Wedding venues are welcome in every state.'; block = true; }
+        else if (YELLOW.indexOf(s) >= 0) { text = 'In this state we offer the flat monthly plans only, with no per job fee.'; if (pl && pl.value === 'per-job') block = true; }
+        if (s === 'NV' && tr && tr.value === 'pools') { text = 'Sorry, we are not taking pool or spa builders in Nevada yet.'; block = true; }
+        if (s === 'NY') text += ' We do not take clients in Nassau, Suffolk, Westchester, Rockland or Putnam counties.';
+      }
+      if (msg) { msg.textContent = text; msg.hidden = !text; }
+      if (pmsg) { pmsg.textContent = (pl && pl.value === 'per-job' && YELLOW.indexOf(s) >= 0 && !venue()) ? 'Pay per signed job is not offered in your state. Please pick a monthly plan.' : ''; pmsg.hidden = !pmsg.textContent; }
+      st.setCustomValidity(block ? (text || 'Not offered in this state') : '');
+      return !block;
+    }
+    st.addEventListener('change', check);
+    if (tr) tr.addEventListener('change', check);
+    if (pl) pl.addEventListener('change', check);
+    form.addEventListener('submit', function (ev) { if (!check()) { ev.preventDefault(); if (msg) msg.focus && msg.focus(); } });
+    // Prefill the trade from ?trade= on links from trade pages.
+    var q = new URLSearchParams(window.location.search).get('trade');
+    if (q && tr) { for (var j = 0; j < tr.options.length; j++) if (tr.options[j].value === q) tr.selectedIndex = j; }
+  })(forms[i]);
+})();
