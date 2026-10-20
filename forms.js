@@ -76,5 +76,15 @@
     // Prefill the trade from ?trade= on links from trade pages.
     var q = new URLSearchParams(window.location.search).get('trade');
     if (q && tr) { for (var j = 0; j < tr.options.length; j++) if (tr.options[j].value === q) tr.selectedIndex = j; }
+    // Show only the plans for this business (each trade and size sees its own plans).
+    if (pl) {
+      var qp = new URLSearchParams(window.location.search).get('plan');
+      var allow = ['exclusive', 'per-job', 'win-back'];
+      if (qp === 'small-shop') allow = ['small-shop', 'win-back'];
+      else if (q === 'wedding-venues') allow = ['exclusive', 'wedding-per-booking'];
+      else if (q === 'fire-inspection') allow = ['deficiency'];
+      for (var k = pl.options.length - 1; k >= 1; k--) if (allow.indexOf(pl.options[k].value) < 0) pl.remove(k);
+      if (pl.options.length === 2) pl.selectedIndex = 1;
+    }
   })(forms[i]);
 })();
