@@ -225,3 +225,8 @@ select { width: 100%; font: inherit; font-size: 18px; padding: 12px 14px; min-he
 .t-card ul { list-style: none; padding: 0; margin: 6px 0 0; }
 .t-card ul li { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dashed var(--line); padding: 6px 0; font-size: 1rem; }
 .t-card ul li strong { white-space: nowrap; }
+
+/* Easy to read on a phone: billing, plan rules and hints at 18px (Rickey Oct 20 copy review) */
+.fine, .help, .source-note { font-size: 18px; }
+.price-card .per, .t-card p, .t-card ul li { font-size: 18px; }
+.price-card > .kicker:first-child { font-size: 18px; letter-spacing: .04em; }

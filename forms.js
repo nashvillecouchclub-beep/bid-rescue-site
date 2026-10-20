@@ -86,14 +86,26 @@
     var q = new URLSearchParams(window.location.search).get('trade');
     if (q && tr && tr.options) { for (var j = 0; j < tr.options.length; j++) if (tr.options[j].value === q) tr.selectedIndex = j; }
     // Show only the plans for this business (each trade and size sees its own plans).
+    // Regular trades see exclusive and pay per signed job; smaller shops see their two plans;
+    // fire inspection sees Deficiency Rescue. The list updates when the trade changes.
     if (pl) {
       var qp = new URLSearchParams(window.location.search).get('plan');
-      var allow = ['exclusive', 'per-job', 'win-back'];
-      if (qp === 'small-shop') allow = ['small-shop', 'win-back'];
-      else if (venue()) allow = ['exclusive', 'wedding-per-booking'];
-      else if (q === 'fire-inspection') allow = ['deficiency'];
-      for (var k = pl.options.length - 1; k >= 1; k--) if (allow.indexOf(pl.options[k].value) < 0) pl.remove(k);
-      if (pl.options.length === 2) pl.selectedIndex = 1;
+      var all = [];
+      for (var k = 1; k < pl.options.length; k++) all.push(pl.options[k].cloneNode(true));
+      var filterPlans = function () {
+        var allow = ['exclusive', 'per-job'];
+        if (qp === 'small-shop') allow = ['small-shop', 'win-back'];
+        else if (venue()) allow = ['exclusive', 'wedding-per-booking'];
+        else if (tr && tr.value === 'fire-inspection') allow = ['deficiency'];
+        var keep = pl.value;
+        while (pl.options.length > 1) pl.remove(1);
+        for (var m = 0; m < all.length; m++) if (allow.indexOf(all[m].value) >= 0) pl.appendChild(all[m].cloneNode(true));
+        pl.value = keep;
+        if (pl.selectedIndex < 0) pl.selectedIndex = 0;
+        if (pl.options.length === 2) pl.selectedIndex = 1;
+      };
+      filterPlans();
+      if (tr) tr.addEventListener('change', filterPlans);
     }
   })(forms[i]);
 })();
