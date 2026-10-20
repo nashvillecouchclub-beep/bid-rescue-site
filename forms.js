@@ -99,7 +99,12 @@
         else if (tr && tr.value === 'fire-inspection') allow = ['deficiency'];
         var keep = pl.value;
         while (pl.options.length > 1) pl.remove(1);
-        for (var m = 0; m < all.length; m++) if (allow.indexOf(all[m].value) >= 0) pl.appendChild(all[m].cloneNode(true));
+        for (var m = 0; m < all.length; m++) if (allow.indexOf(all[m].value) >= 0) {
+          var o = all[m].cloneNode(true);
+          // Commercial cleaning is billed per signed contract, so it sees its own words.
+          if (o.value === 'per-job' && tr && tr.value === 'commercial-cleaning') o.textContent = 'Pay per signed contract (no monthly fee)';
+          pl.appendChild(o);
+        }
         pl.value = keep;
         if (pl.selectedIndex < 0) pl.selectedIndex = 0;
         if (pl.options.length === 2) pl.selectedIndex = 1;
