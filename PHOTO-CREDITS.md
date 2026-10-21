@@ -24,14 +24,14 @@ The Meet Rickey photo spot on the home page is saved for Rickey's own photo.
 | trades/electrical.html (top) | Modern home with warm outdoor lighting along the path at dusk | https://unsplash.com/photos/modern-white-house-with-illuminated-pathway-at-dusk-eLG6MsOeupk | Unsplash License |
 | trades/electrical.html (Why do you need us?) | Electrician testing wiring inside an electrical panel | https://unsplash.com/photos/electrician-testing-electrical-panel-with-multimeter-PkHf7BUWbtk | Unsplash License |
 | trades/fence.html (top) | New wooden privacy fence with a gate on a sunny day | https://unsplash.com/photos/wooden-fence-with-a-gate-on-a-sunny-day-EE2R5Mh9Dro | Unsplash License |
-| trades/fence.html (Why do you need us?) | Workers setting a wooden fence post on a sunny day | https://www.pexels.com/photo/construction-workers-setting-up-a-fence-outdoors-36617431/ | Pexels License |
+| trades/fence.html (Why do you need us?) | Hands hammering a nail into new wooden fence boards | https://www.pexels.com/photo/a-person-hammering-a-nail-8447781/ | Pexels License |
 | trades/foundation.html (top) | Aerial view of a new concrete foundation on a building site | https://unsplash.com/photos/aerial-view-of-gray-concrete-building-rsGd-rXFGkM | Unsplash License |
 | trades/foundation.html (Why do you need us?) | Worker on a reinforced concrete foundation | https://www.pexels.com/photo/construction-worker-on-reinforced-concrete-foundation-37733181/ | Pexels License |
 | trades/home-elevators.html (top) | Bright stainless steel elevator with marble walls | https://www.pexels.com/photo/a-stainless-steel-narrow-elevator-7722159/ | Pexels License |
 | trades/home-elevators.html (Why do you need us?) | Modern home hallway with a staircase and wood floors | https://www.pexels.com/photo/view-of-a-home-interior-6670866/ | Pexels License |
 | trades/home-theater.html (top) | Home theater with leather recliners facing the screen | https://www.pexels.com/photo/home-cinema-with-comfortable-leather-armchairs-8583821/ | Pexels License |
 | trades/home-theater.html (Why do you need us?) | Media room with a gray sofa and a wall mounted screen | https://www.pexels.com/photo/a-narrow-room-with-gray-sofa-in-front-of-a-flat-screen-tv-mounted-on-wall-7745995/ | Pexels License |
-| trades/hvac.html (top) | Technician servicing an outdoor air conditioning unit | https://www.pexels.com/photo/technician-fixing-an-aircon-5463582/ | Pexels License |
+| trades/hvac.html (top) | Technician inspecting an outdoor air conditioning unit | https://www.pexels.com/photo/technician-inspecting-outdoor-hvac-unit-32497161/ | Pexels License |
 | trades/hvac.html (Why do you need us?) | Technician checking an outdoor HVAC system with gauges | https://www.pexels.com/photo/man-with-tools-at-work-6471911/ | Pexels License |
 | trades/kitchens-baths.html (top) | Remodeled kitchen with a center island and two stools | https://unsplash.com/photos/a-kitchen-with-a-center-island-and-two-stools-ItvZqtoDjgc | Unsplash License |
 | trades/kitchens-baths.html (Why do you need us?) | Hands setting white tile on a kitchen backsplash | https://unsplash.com/photos/person-holding-white-tile-LyQi9DS7AEg | Unsplash License |
@@ -52,7 +52,7 @@ The Meet Rickey photo spot on the home page is saved for Rickey's own photo.
 | trades/small-shop.html (top) | Hands measuring a board with a tape measure | https://unsplash.com/photos/person-holding-yellow-and-black-tape-measure-cfNchb3VAI8 | Unsplash License |
 | trades/small-shop.html (Why do you need us?) | Woodworker cutting a slot in a wooden board | https://unsplash.com/photos/person-using-biscuit-joiner-on-wood-oQQEXoG8Oqc | Unsplash License |
 | trades/fire-inspection.html (top) | Commercial ceiling with red fire sprinkler pipes | https://unsplash.com/photos/exposed-industrial-ceiling-with-concrete-beams-red-pipes-and-wiring-YkPY2Awkra8 | Unsplash License |
-| trades/fire-inspection.html (Why do you need us?) | Red grooved pipe coupling on a sprinkler line | https://unsplash.com/photos/red-grooved-pipe-coupling-5pikDZVBx_k | Unsplash License |
+| trades/fire-inspection.html (Why do you need us?) | Red fire sprinkler pipes running along a building wall | https://www.pexels.com/photo/industrial-fire-sprinkler-system-pipes-37352142/ | Pexels License |
 | index.html (top) | Builder in a hard hat working on a house frame | https://unsplash.com/photos/construction-worker-in-hard-hat-on-building-frame-X1P1_EDNnok | Unsplash License |
 | venues/index.html | Barn venue opening onto green fields and mountains at golden hour | https://unsplash.com/photos/barn-interior-framing-a-green-field-mountains-and-sunset-2cd-Th29hfs | Unsplash License |
 | venues/index.html | Reception table with white linens, candles and greenery under a chandelier | https://unsplash.com/photos/a-table-with-a-white-table-cloth-and-a-chandelier-TgV07XNKS54 | Unsplash License |
