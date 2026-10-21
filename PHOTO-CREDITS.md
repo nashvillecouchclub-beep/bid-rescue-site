@@ -7,7 +7,7 @@ Every photo is free for commercial use with no attribution required, under the l
 - Pexels License: https://www.pexels.com/license/
 
 Photos are linked straight from images.unsplash.com and images.pexels.com (both allow hotlinking). They are stock photos of the trade, not our clients' work.
-Meet Rickey headshot (home page and venues/index.html): Rickey's own image from his Higgsfield library, approved by Rickey on Oct 20 2026. It is not a stock photo. Hotlinked from https://d8j0ntlcm91z4.cloudfront.net/user_3Jk0UlM468OQEI2G7g576xD2uKy/hf_20261019_183512_48ad61dd-9600-4700-bcd3-7fc210eece9a.png
+Meet Rickey headshot (home page and venues/index.html): Rickey's own image from his Higgsfield library, approved by Rickey on Oct 20 2026. It is not a stock photo. Hotlinked from https://d8j0ntlcm91z4.cloudfront.net/user_3Jk0UlM468OQEI2G7g576xD2uKy/hf_20261019_183347_85fc6bdc-fcb4-4c1d-8f1d-bdb5af9e9478.png Changed Oct 20 2026 7:42 pm at Rickey's ask to his full length photo in a white polo, leaning on a sofa arm (9:16, shown whole in a tall frame).
 
 | Page | Shows | Photo page | License |
 |---|---|---|---|

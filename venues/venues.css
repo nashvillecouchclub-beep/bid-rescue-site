@@ -369,12 +369,13 @@ html { scroll-padding-top: 96px; }
 /* Meet Rickey: a small round portrait in a gilt ring, beside a personal note */
 .meet-chapter { padding-bottom: 0; }
 .meet { display: grid; gap: 1.75rem; justify-items: center; text-align: center; max-width: 52rem; margin: 0 auto; }
-.meet-portrait { margin: 0; width: 196px; height: 196px; border-radius: 50%; padding: 7px; background: var(--paper); border: 1px solid var(--gilt); outline: 1px solid var(--gilt-soft); outline-offset: 5px; box-shadow: 0 14px 34px rgba(30, 43, 39, .10); }
-.meet-portrait img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 30%; background: var(--linen); }
+.meet-portrait { margin: 0; width: 240px; height: auto; aspect-ratio: 9 / 16; border-radius: 22px; padding: 7px; background: var(--paper); border: 1px solid var(--gilt); outline: 1px solid var(--gilt-soft); outline-offset: 5px; box-shadow: 0 14px 34px rgba(30, 43, 39, .10); }
+.meet-portrait img { display: block; width: 100%; height: 100%; border-radius: 16px; object-fit: cover; object-position: 50% 50%; background: var(--linen); }
 .meet-copy h2 { margin-bottom: .4em; }
 .meet-copy p { color: var(--muted); margin: 0; }
 @media (min-width: 760px) {
-  .meet { grid-template-columns: 220px minmax(0, 1fr); gap: 3.5rem; justify-items: start; text-align: left; align-items: center; }
+  .meet-portrait { width: 270px; }
+  .meet { grid-template-columns: 270px minmax(0, 1fr); gap: 3.5rem; justify-items: start; text-align: left; align-items: center; }
 }
 .meet-chapter .ornament { margin-top: 4rem; margin-bottom: 0; }
 

@@ -379,15 +379,18 @@ select { width: 100%; font: inherit; font-size: 18px; padding: 12px 44px 12px 16
 /* ---------- Meet Rickey ---------- */
 .meet { display: grid; gap: 24px; align-items: center; padding-bottom: 48px; margin-bottom: 48px; border-bottom: 1px solid var(--line); }
 .meet-photo {
-  width: 184px; height: 184px; border-radius: 50%; object-fit: cover; object-position: 50% 30%;
+  width: 240px; height: auto; aspect-ratio: 9 / 16; justify-self: center; border-radius: 18px; object-fit: cover; object-position: 50% 50%;
   background: var(--tan); border: 6px solid var(--paper); box-shadow: 0 0 0 1px var(--gold), var(--shadow-md);
 }
 .meet-copy h2 { margin-bottom: .35em; }
 .meet-copy p { font-size: 1.18rem; line-height: 1.65; color: var(--muted); margin: 0; max-width: 36em; }
 @media (min-width: 720px) {
-  .meet { grid-template-columns: 200px minmax(0, 1fr); gap: 48px; }
-  .meet-photo { width: 200px; height: 200px; }
+  .meet { grid-template-columns: 270px minmax(0, 1fr); gap: 48px; }
+  .meet-photo { width: 270px; }
 }
+
+/* Meet Rickey sits in its own section at the bottom of the home page (Rickey Oct 20 7:39 pm) */
+.meet-section .meet { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--forest-deep); color: var(--on-dark-muted); padding: 56px 0 48px; font-size: 18px; border-top: 1px solid rgba(201, 162, 39, .35); }
