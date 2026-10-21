@@ -285,3 +285,17 @@ input, select, textarea { font-size: 1.2rem; }
 .included { list-style: none; padding: 0; margin: 0.4rem 0 1rem; }
 .included li { position: relative; padding: 0.45rem 0 0.45rem 1.5rem; border-top: 1px solid var(--gilt-soft); font-size: 1.15rem; }
 .included li::before { content: ""; position: absolute; left: 0.2rem; top: 1.05rem; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--gilt); }
+
+/* Venue photos (Rickey Oct 20 6:51 pm): framed like plates in an album. Thin gilt hairline, ivory mat, soft shadow. */
+.plates { padding: 0 0 3.5rem; }
+.plates-trio { padding: 0 0 4.5rem; }
+.plate { margin: 0; padding: 7px; background: var(--paper); border: 1px solid var(--gilt); box-shadow: 0 14px 34px rgba(30, 43, 39, 0.10); outline: 1px solid var(--gilt-soft); outline-offset: 5px; }
+.plate img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; background: var(--linen); }
+.plate-wide img { aspect-ratio: 3 / 2; }
+.trio { display: grid; gap: 2.25rem; }
+@media (min-width: 760px) {
+  .plates { padding-bottom: 5rem; }
+  .plate-wide img { aspect-ratio: 16 / 7; }
+  .trio { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .trio .plate img { aspect-ratio: 4 / 5; }
+}
