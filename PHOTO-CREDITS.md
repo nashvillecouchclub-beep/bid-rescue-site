@@ -31,7 +31,7 @@ The Meet Rickey photo spot on the home page is saved for Rickey's own photo.
 | trades/home-elevators.html (Why do you need us?) | Modern home hallway with a staircase and wood floors | https://www.pexels.com/photo/view-of-a-home-interior-6670866/ | Pexels License |
 | trades/home-theater.html (top) | Home theater with leather recliners facing the screen | https://www.pexels.com/photo/home-cinema-with-comfortable-leather-armchairs-8583821/ | Pexels License |
 | trades/home-theater.html (Why do you need us?) | Media room with a gray sofa and a wall mounted screen | https://www.pexels.com/photo/a-narrow-room-with-gray-sofa-in-front-of-a-flat-screen-tv-mounted-on-wall-7745995/ | Pexels License |
-| trades/hvac.html (top) | Technician inspecting an outdoor air conditioning unit | https://www.pexels.com/photo/technician-inspecting-outdoor-hvac-unit-32497161/ | Pexels License |
+| trades/hvac.html (top) | Technician in a hard hat testing equipment with a meter | https://unsplash.com/photos/man-in-brown-and-white-plaid-dress-shirt-and-yellow-hard-hat-holding-black-and-orange--0-kl1BjvFc | Unsplash License |
 | trades/hvac.html (Why do you need us?) | Technician checking an outdoor HVAC system with gauges | https://www.pexels.com/photo/man-with-tools-at-work-6471911/ | Pexels License |
 | trades/kitchens-baths.html (top) | Remodeled kitchen with a center island and two stools | https://unsplash.com/photos/a-kitchen-with-a-center-island-and-two-stools-ItvZqtoDjgc | Unsplash License |
 | trades/kitchens-baths.html (Why do you need us?) | Hands setting white tile on a kitchen backsplash | https://unsplash.com/photos/person-holding-white-tile-LyQi9DS7AEg | Unsplash License |
