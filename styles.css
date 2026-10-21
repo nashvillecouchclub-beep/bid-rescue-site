@@ -392,6 +392,13 @@ select { width: 100%; font: inherit; font-size: 18px; padding: 12px 44px 12px 16
 /* Meet Rickey sits in its own section at the bottom of the home page (Rickey Oct 20 7:39 pm) */
 .meet-section .meet { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
 
+/* States we serve: one vertical list of only the states we serve (Rickey Oct 20 7:46 pm). Reads top to bottom. */
+.state-list { list-style: none; padding: 0; margin: 20px 0 0; columns: 2; column-gap: 24px; font-size: 18px; line-height: 1.45; }
+.state-list li { break-inside: avoid; position: relative; padding: 0 0 12px 22px; }
+.state-list li::before { content: ""; position: absolute; left: 3px; top: .3em; width: 6px; height: 11px; border: solid var(--gold); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.state-note { display: block; color: var(--muted); font-size: 18px; line-height: 1.4; }
+@media (min-width: 760px) { .state-list { columns: 3; column-gap: 36px; } }
+
 /* ---------- Footer ---------- */
 .site-footer { background: var(--forest-deep); color: var(--on-dark-muted); padding: 56px 0 48px; font-size: 18px; border-top: 1px solid rgba(201, 162, 39, .35); }
 .site-footer a { color: var(--white); text-decoration: none; }
