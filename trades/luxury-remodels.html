@@ -6,9 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Luxury remodelers | Bid Rescue</title>
 <meta name="description" content="Bid Rescue for luxury remodelers: we follow up on your unsold remodel estimates in your name. Free check on 5 estimates. No software to buy, nothing to learn.">
+<meta name="theme-color" content="#1F3D2B">
+<link rel="canonical" href="https://getbidrescue.com/trades/luxury-remodels.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bid Rescue">
+<meta property="og:title" content="Luxury remodelers | Bid Rescue">
+<meta property="og:description" content="Bid Rescue for luxury remodelers: we follow up on your unsold remodel estimates in your name. Free check on 5 estimates. No software to buy, nothing to learn.">
+<meta property="og:url" content="https://getbidrescue.com/trades/luxury-remodels.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=960&amp;q=70&amp;auto=format&amp;fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Luxury remodelers | Bid Rescue">
+<meta name="twitter:description" content="Bid Rescue for luxury remodelers: we follow up on your unsold remodel estimates in your name. Free check on 5 estimates. No software to buy, nothing to learn.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=960&amp;q=70&amp;auto=format&amp;fit=crop">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:opsz,wght@9..144,800&family=Outfit:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
 <link rel="icon" href="../logo-icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -17,13 +29,15 @@
 <header class="site-header">
   <div class="wrap">
     <a class="wordmark" href="luxury-remodels.html"><img src="../logo-icon.svg" alt="" width="36" height="36"><span class="wm">Bid Rescue<small>WE BRING BIDS BACK</small></span></a>
-    <nav class="top-nav"><a href="../everything.html">Everything we do</a><a class="header-cta" href="../checkup.html">Free check</a></nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"><span></span></span><span class="nav-toggle-label">Menu</span></button>
+    <nav class="top-nav" id="site-nav" aria-label="Main"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a><a href="../everything.html">Everything we do</a><a class="header-cta" href="../checkup.html">Free check</a></nav>
   </div>
 </header>
 
 <main id="main">
-<section class="hero">
-  <div class="wrap narrow">
+<section class="hero hero-has-photo">
+  <div class="wrap hero-split">
+  <div class="hero-copy">
     <p class="kicker">For luxury remodelers</p>
     <h1>Your next remodel is already in your <em>unsold estimates.</em></h1>
     <p class="lead">Send us 5 estimates that never signed. Within 48 hours we send back a ready follow up for each one, in your style, free to send yourself.</p>
@@ -33,11 +47,15 @@
       <li>Exclusive plans: one luxury remodeler per area</li>
     </ul>
     <a class="btn btn-big" href="../checkup.html?trade=luxury-remodels">Get my 5 free follow ups</a>
-    <figure class="photo photo-hero"><img src="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=1200&q=70&auto=format&fit=crop" alt="Bright remodeled living room with two gray velvet sofas" width="1200" height="800" decoding="async" fetchpriority="high"></figure>
+  </div>
+  <div class="hero-media">
+    <figure class="photo photo-hero"><img src="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=960&q=70&auto=format&fit=crop" alt="Bright remodeled living room with two gray velvet sofas" width="1200" height="800" decoding="async" fetchpriority="high"></figure>
+  </div>
   </div>
 </section>
 <section id="why-us" class="why-us">
-  <div class="wrap narrow">
+  <div class="wrap split">
+  <div class="split-copy">
     <h2>Why do you need us?</h2>
     <p class="lead">You do high end work. Chasing every bid is a second job, and it is the one that gets skipped.</p>
     <ul class="reasons">
@@ -47,7 +65,10 @@
       <li><strong>High end clients notice a pushy note.</strong> Writing follow ups that sound polished and patient takes skill. We write each one to match the level of your work.</li>
       <li><strong>Software still needs someone to run it.</strong> A CRM can send reminders, but someone still has to write them and keep up every week. We do all of it for every open bid: we write in your style, send from your email, and you approve each set with one click.</li>
     </ul>
-    <figure class="photo photo-side"><img src="https://images.unsplash.com/photo-1603901622056-0a5bee231395?w=1200&q=70&auto=format&fit=crop" alt="House plans with drafting pencils and a metal ruler" width="1200" height="800" decoding="async" loading="lazy"></figure>
+  </div>
+  <div class="split-media">
+    <figure class="photo photo-side"><img src="https://images.unsplash.com/photo-1603901622056-0a5bee231395?w=960&q=70&auto=format&fit=crop" alt="House plans with drafting pencils and a metal ruler" width="1200" height="800" decoding="async" loading="lazy"></figure>
+  </div>
   </div>
 </section>
 
@@ -188,5 +209,6 @@
   </div>
 </footer>
 <script src="../forms.js" defer></script>
+<script src="../site.js" defer></script>
 </body>
 </html>

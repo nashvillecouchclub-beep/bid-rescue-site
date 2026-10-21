@@ -7,7 +7,7 @@ Every photo is free for commercial use with no attribution required, under the l
 - Pexels License: https://www.pexels.com/license/
 
 Photos are linked straight from images.unsplash.com and images.pexels.com (both allow hotlinking). They are stock photos of the trade, not our clients' work.
-The Meet Rickey photo spot on the home page is saved for Rickey's own photo.
+Meet Rickey headshot (home page and venues/index.html): Rickey's own image from his Higgsfield library, approved by Rickey on Oct 20 2026. It is not a stock photo. Hotlinked from https://d8j0ntlcm91z4.cloudfront.net/user_3Jk0UlM468OQEI2G7g576xD2uKy/hf_20261019_183512_48ad61dd-9600-4700-bcd3-7fc210eece9a.png
 
 | Page | Shows | Photo page | License |
 |---|---|---|---|
@@ -54,7 +54,7 @@ The Meet Rickey photo spot on the home page is saved for Rickey's own photo.
 | trades/fire-inspection.html (top) | Commercial ceiling with red fire sprinkler pipes | https://unsplash.com/photos/exposed-industrial-ceiling-with-concrete-beams-red-pipes-and-wiring-YkPY2Awkra8 | Unsplash License |
 | trades/fire-inspection.html (Why do you need us?) | Red fire sprinkler pipes running along a building wall | https://www.pexels.com/photo/industrial-fire-sprinkler-system-pipes-37352142/ | Pexels License |
 | index.html (top) | Builder in a hard hat working on a house frame | https://unsplash.com/photos/construction-worker-in-hard-hat-on-building-frame-X1P1_EDNnok | Unsplash License |
-| venues/index.html | Barn venue opening onto green fields and mountains at golden hour | https://unsplash.com/photos/barn-interior-framing-a-green-field-mountains-and-sunset-2cd-Th29hfs | Unsplash License |
-| venues/index.html | Reception table with white linens, candles and greenery under a chandelier | https://unsplash.com/photos/a-table-with-a-white-table-cloth-and-a-chandelier-TgV07XNKS54 | Unsplash License |
-| venues/index.html | Ceremony aisle with gold chairs leading to a white floral arch | https://unsplash.com/photos/wedding-archway-with-white-flowers-aRQrz0fclB8 | Unsplash License |
-| venues/index.html | Bride and groom walking away hand in hand | https://unsplash.com/photos/wedding-couple-holding-hands-while-walking-XiiexZ2jjrI | Unsplash License |
+| venues/index.html (Why do you need us?) | Barn venue opening onto green fields and mountains at golden hour | https://unsplash.com/photos/barn-interior-framing-a-green-field-mountains-and-sunset-2cd-Th29hfs | Unsplash License |
+| venues/index.html (Couples go quiet) | Reception table with white linens, candles and greenery under a chandelier | https://unsplash.com/photos/a-table-with-a-white-table-cloth-and-a-chandelier-TgV07XNKS54 | Unsplash License |
+| venues/index.html (not shown since the Oct 20 redesign) | Ceremony aisle with gold chairs leading to a white floral arch | https://unsplash.com/photos/wedding-archway-with-white-flowers-aRQrz0fclB8 | Unsplash License |
+| venues/index.html (not shown since the Oct 20 redesign) | Bride and groom walking away hand in hand | https://unsplash.com/photos/wedding-couple-holding-hands-while-walking-XiiexZ2jjrI | Unsplash License |

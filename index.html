@@ -5,9 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bid Rescue | We bring bids back</title>
 <meta name="description" content="Bid Rescue follows up on your unsold estimates in your name, so more of them sign. Free follow ups on 5 estimates. No software to buy, nothing to learn.">
+<meta name="theme-color" content="#1F3D2B">
+<link rel="canonical" href="https://getbidrescue.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bid Rescue">
+<meta property="og:title" content="Bid Rescue | We bring bids back">
+<meta property="og:description" content="Bid Rescue follows up on your unsold estimates in your name, so more of them sign. Free follow ups on 5 estimates. No software to buy, nothing to learn.">
+<meta property="og:url" content="https://getbidrescue.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=960&amp;q=70&amp;auto=format&amp;fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bid Rescue | We bring bids back">
+<meta name="twitter:description" content="Bid Rescue follows up on your unsold estimates in your name, so more of them sign. Free follow ups on 5 estimates. No software to buy, nothing to learn.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=960&amp;q=70&amp;auto=format&amp;fit=crop">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:opsz,wght@9..144,800&family=Outfit:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
 <link rel="icon" href="logo-icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,13 +28,15 @@
 <header class="site-header">
   <div class="wrap">
     <a class="wordmark" href="index.html"><img src="logo-icon.svg" alt="" width="36" height="36"><span class="wm">Bid Rescue<small>WE BRING BIDS BACK</small></span></a>
-    <nav class="top-nav"><a href="everything.html">Everything we do</a><a class="header-cta" href="checkup.html">Free check</a></nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"><span></span></span><span class="nav-toggle-label">Menu</span></button>
+    <nav class="top-nav" id="site-nav" aria-label="Main"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a><a href="everything.html">Everything we do</a><a class="header-cta" href="checkup.html">Free check</a></nav>
   </div>
 </header>
 
 <main id="main">
-<section class="hero">
-  <div class="wrap narrow">
+<section class="hero hero-has-photo">
+  <div class="wrap hero-split">
+  <div class="hero-copy">
     <p class="kicker">We bring bids back</p>
     <h1>Your next job is already in your <em>unsold estimates.</em></h1>
     <p class="lead">Most estimates that go quiet never get a second email. We write those follow ups in your style, send them from your email, and you approve each set with one click.</p>
@@ -33,7 +47,10 @@
     </ul>
     <a class="btn btn-big" href="checkup.html">Get my 5 free follow ups</a>
     <p class="fine">Send 5 estimates that never signed. Within 48 hours you get a ready follow up for each one, free to send yourself.</p>
-    <figure class="photo photo-hero"><img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=1200&q=70&auto=format&fit=crop" alt="Builder in a hard hat working on a house frame" width="1200" height="800" decoding="async" fetchpriority="high"></figure>
+  </div>
+  <div class="hero-media">
+    <figure class="photo photo-hero"><img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=960&q=70&auto=format&fit=crop" alt="Builder in a hard hat working on a house frame" width="1200" height="800" decoding="async" fetchpriority="high"></figure>
+  </div>
   </div>
 </section>
 <section id="why-us" class="why-us">
@@ -106,7 +123,14 @@
 
 <section id="why">
   <div class="wrap narrow">
-    <!-- Meet Rickey photo spot: Rickey will send his own photo for here. Never use a stock photo of a person in this spot. -->
+    <!-- Meet Rickey: Rickey approved his own headshot (his Higgsfield library) and this bio word for word, Oct 20 2026. -->
+    <div class="meet" id="meet-rickey">
+      <img class="meet-photo" src="https://d8j0ntlcm91z4.cloudfront.net/user_3Jk0UlM468OQEI2G7g576xD2uKy/hf_20261019_183512_48ad61dd-9600-4700-bcd3-7fc210eece9a.png" alt="Rickey Hallor" width="1536" height="1536" loading="lazy" decoding="async">
+      <div class="meet-copy">
+        <h2>Meet Rickey.</h2>
+        <p>I'm Rickey Hallor, a small business owner in the Nashville area. Running my own business taught me how much money slips away in the small things nobody has time for, like following up on a quote or answering a review. So I started this for other business owners like myself. My team uses smart tools to handle that work for you, and I stay personally involved, so nothing goes out under your name until you say OK.</p>
+      </div>
+    </div>
     <p class="kicker">How we work</p>
     <h2>What you can count on</h2>
     <ul class="checks">
@@ -176,5 +200,6 @@
   </div>
 </footer>
 <script src="forms.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>

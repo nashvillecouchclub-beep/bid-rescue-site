@@ -6,6 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bid Rescue for Venues</title>
 <meta name="description" content="Bring back the couples who asked about your date and went quiet. One wedding venue per area. No software to buy, nothing to learn.">
+<meta name="theme-color" content="#1F4136">
+<link rel="canonical" href="https://getbidrescue.com/venues/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bid Rescue for Venues">
+<meta property="og:title" content="Bid Rescue for Venues">
+<meta property="og:description" content="Bring back the couples who asked about your date and went quiet. One wedding venue per area. No software to buy, nothing to learn.">
+<meta property="og:url" content="https://getbidrescue.com/venues/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1780728955781-749d9bc8171a?w=960&amp;q=70&amp;auto=format&amp;fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bid Rescue for Venues">
+<meta name="twitter:description" content="Bring back the couples who asked about your date and went quiet. One wedding venue per area. No software to buy, nothing to learn.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1780728955781-749d9bc8171a?w=960&amp;q=70&amp;auto=format&amp;fit=crop">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Jost:wght@300..600&display=swap">
@@ -17,7 +29,8 @@
 <header class="masthead">
   <div class="column wide bar">
     <a class="wordmark" href="index.html"><img src="monogram.svg" alt="" width="42" height="42"><span class="name"><b>Bid Rescue</b><i>for Venues</i></span></a>
-    <nav><a href="checkup.html">Free inquiry check</a></nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"><span></span></span><span class="nav-toggle-label">Menu</span></button>
+    <nav class="mast-nav" id="site-nav" aria-label="Main"><a href="#package">The package</a><a href="#pricing">Pricing</a><a href="#questions">Questions</a><a class="mast-cta" href="checkup.html">Free inquiry check</a></nav>
   </div>
 </header>
 
@@ -37,13 +50,9 @@
     <p class="small">Send us your last 90 days of inquiries. We show you which couples we would bring back.</p>
   </div>
 </section>
-<section class="plates" aria-label="Venue photos">
-  <div class="column wide">
-    <figure class="plate plate-wide"><img src="https://images.unsplash.com/photo-1780728955781-749d9bc8171a?w=1200&q=70&auto=format&fit=crop" alt="Barn venue opening onto green fields and mountains at golden hour" width="1200" height="800" decoding="async" fetchpriority="high"></figure>
-  </div>
-</section>
 <section class="chapter linen why-us" id="why-us">
-  <div class="column">
+  <div class="column wide vsplit">
+  <div class="vsplit-copy">
     <h2 class="centered">Why do you need us?</h2>
     <p class="centered intro">You run beautiful events. Chasing every couple is work of its own, and it is the part that gets skipped.</p>
     <div class="ornament" aria-hidden="true"><span></span></div>
@@ -56,10 +65,15 @@
       <li><strong>We do all of it in your style, from your email, and you approve with one click.</strong> Nothing to learn. You read each set of emails, approve it with one click, and couples reply straight to you.</li>
     </ol>
   </div>
+  <div class="vsplit-media">
+    <figure class="plate plate-tall"><img src="https://images.unsplash.com/photo-1780728955781-749d9bc8171a?w=960&q=70&auto=format&fit=crop" alt="Barn venue opening onto green fields and mountains at golden hour" width="1200" height="800" decoding="async" loading="lazy"></figure>
+  </div>
+  </div>
 </section>
 
 <section class="chapter" id="familiar">
-  <div class="column prose">
+  <div class="column wide vsplit vsplit-rev">
+  <div class="vsplit-copy prose">
     <h2>Couples go quiet, dates go empty</h2>
     <ul class="ruled">
       <li>Inquiries are scattered across email, your website and Instagram</li>
@@ -69,15 +83,9 @@
     </ul>
     <p class="source">1 in 4 venues handle big wedding inquiries on a personal phone, and 61% also host corporate or social events (HoneyBook 2026 Venue Focus Study, 455 US venues).</p>
   </div>
-</section>
-
-<section class="plates plates-trio" aria-label="Wedding day photos">
-  <div class="column wide">
-    <div class="trio">
-      <figure class="plate"><img src="https://images.unsplash.com/photo-1723832348140-a2d9eb1753b1?w=1200&q=70&auto=format&fit=crop" alt="Reception table with white linens, candles and greenery under a chandelier" width="1200" height="800" decoding="async" loading="lazy"></figure>
-      <figure class="plate"><img src="https://images.unsplash.com/photo-1670529776180-60e4132ab90c?w=1200&q=70&auto=format&fit=crop" alt="Ceremony aisle with gold chairs leading to a white floral arch" width="1200" height="800" decoding="async" loading="lazy"></figure>
-      <figure class="plate"><img src="https://images.unsplash.com/photo-1525258706463-a8c77635beb1?w=1200&q=70&auto=format&fit=crop" alt="Bride and groom walking away hand in hand" width="1200" height="800" decoding="async" loading="lazy"></figure>
-    </div>
+  <div class="vsplit-media">
+    <figure class="plate plate-tall"><img src="https://images.unsplash.com/photo-1723832348140-a2d9eb1753b1?w=960&q=70&auto=format&fit=crop" alt="Reception table with white linens, candles and greenery under a chandelier" width="1200" height="800" decoding="async" loading="lazy"></figure>
+  </div>
   </div>
 </section>
 
@@ -181,6 +189,19 @@
   </div>
 </section>
 
+<section class="chapter meet-chapter" id="meet-rickey">
+  <div class="column wide">
+    <!-- Meet Rickey: Rickey approved his own headshot (his Higgsfield library) and this bio word for word, Oct 20 2026. -->
+    <div class="meet">
+      <figure class="meet-portrait"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Jk0UlM468OQEI2G7g576xD2uKy/hf_20261019_183512_48ad61dd-9600-4700-bcd3-7fc210eece9a.png" alt="Rickey Hallor" width="1536" height="1536" loading="lazy" decoding="async"></figure>
+      <div class="meet-copy">
+        <h2>Meet Rickey.</h2>
+        <p>I'm Rickey Hallor, a small business owner in the Nashville area. Running my own business taught me how much money slips away in the small things nobody has time for, like following up on a quote or answering a review. So I started this for other business owners like myself. My team uses smart tools to handle that work for you, and I stay personally involved, so nothing goes out under your name until you say OK.</p>
+      </div>
+    </div>
+    <div class="ornament" aria-hidden="true"><span></span></div>
+  </div>
+</section>
 <section class="chapter">
   <div class="column centered">
     <h2>See which couples we would bring back</h2>
@@ -198,5 +219,6 @@
     <p>P.O. Box 1166, Smyrna, TN 37167</p>
   </div>
 </footer>
+<script src="../site.js" defer></script>
 </body>
 </html>
